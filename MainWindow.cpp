@@ -22,6 +22,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::initUi()
 {
+    this->setWindowIcon(QIcon(":/icon.png"));
+
     this->mUdpSocket->close();
     this->mTcpSocket->close();
     //  初始化本地网络
